@@ -1,0 +1,149 @@
+Command line: PSQL_INCDIR=/usr/include/postgresql
+looking for library db2
+Trying source 0 (type inline) of library db2 ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library db2 ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/db2 && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += db2' 'QMAKE_LIBS_DB2 = -ldb2' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/db2
+> Info: creating stash file /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/.qmake.stash
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/db2 && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: sqlcli.h: No such file or directory
+>  #include <sqlcli.h>
+>           ^~~~~~~~~~
+> compilation terminated.
+> Makefile:475: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.db2 FAILED
+looking for library ibase
+Trying source 0 (type inline) of library ibase ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library ibase ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/ibase && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += ibase' 'QMAKE_LIBS_IBASE = -lgds' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/ibase
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/ibase && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: ibase.h: No such file or directory
+>  #include <ibase.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:478: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.ibase FAILED
+looking for library mysql
+Trying source 0 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 1 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 2 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 3 (type mysqlConfig) of library mysql ...
+mysql_config not found.
+  => source produced no result.
+Trying source 4 (type inline) of library mysql ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/mysql && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += mysql' 'QMAKE_LIBS_MYSQL = -lmysqlclient_r' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/mysql
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/mysql && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:5:10: fatal error: mysql.h: No such file or directory
+>  #include <mysql.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:478: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+Trying source 5 (type inline) of library mysql ...
+  => source failed condition 'config.win32'.
+Trying source 6 (type inline) of library mysql ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/mysql && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += mysql' 'QMAKE_LIBS_MYSQL = -lmysqlclient' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/mysql
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/mysql && MAKEFLAGS= make clean && MAKEFLAGS= make
+> rm -f main.o
+> rm -f *~ core *.core
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:5:10: fatal error: mysql.h: No such file or directory
+>  #include <mysql.h>
+>           ^~~~~~~~~
+> compilation terminated.
+> Makefile:478: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.mysql FAILED
+looking for library oci
+Trying source 0 (type inline) of library oci ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library oci ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/oci && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += oci' 'QMAKE_LIBS_OCI = -lclntsh' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/oci
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/oci && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: oci.h: No such file or directory
+>  #include <oci.h>
+>           ^~~~~~~
+> compilation terminated.
+> Makefile:478: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.oci FAILED
+looking for library odbc
+Trying source 0 (type inline) of library odbc ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type inline) of library odbc ...
+  => source failed condition 'config.darwin'.
+Trying source 2 (type inline) of library odbc ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/odbc && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += odbc' 'QMAKE_LIBS_ODBC = -lodbc' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/odbc
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/odbc && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:5:10: fatal error: sql.h: No such file or directory
+>  #include <sql.h>
+>           ^~~~~~~
+> compilation terminated.
+> Makefile:478: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.odbc FAILED
+looking for library psql
+Trying source 0 (type pkgConfig) of library psql ...
++ /usr/bin/pkg-config --exists --silence-errors libpq
+> sh: 1: /usr/bin/pkg-config: not found
+pkg-config did not find package.
+  => source produced no result.
+Trying source 1 (type psqlConfig) of library psql ...
++ /usr/bin/pg_config --libdir
+> /usr/lib/x86_64-linux-gnu
++ /usr/bin/pg_config --includedir
+> /usr/include/postgresql
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/psql && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += psql' 'QMAKE_LIBS_PSQL = -lpq' 'QMAKE_INCDIR_PSQL = /usr/include/postgresql' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/psql
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/psql && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -isystem /usr/include/postgresql -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> g++ -Wl,-O1 -o psql main.o   -lpq   
+ => source accepted.
+test config.sqldrivers.libraries.psql succeeded
+looking for library sqlite2
+Trying source 0 (type inline) of library sqlite2 ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/sqlite2 && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += sqlite2' 'QMAKE_LIBS_SQLITE2 = -lsqlite' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/sqlite2
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/sqlite2 && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: sqlite.h: No such file or directory
+>  #include <sqlite.h>
+>           ^~~~~~~~~~
+> compilation terminated.
+> Makefile:478: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.sqlite2 FAILED
+looking for library tds
+Trying source 0 (type sybaseEnv) of library tds ...
+  => source failed condition 'config.win32'.
+Trying source 1 (type sybaseEnv) of library tds ...
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/tds && /usr/bin/qmake "CONFIG -= qt debug_and_release app_bundle lib_bundle" "CONFIG += shared warn_off console single_arch" 'QMAKE_USE += tds' 'QMAKE_LIBS_TDS = -lsybdb' /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/tds
++ cd /home/kofr/dev/tools/5.9.5/Src/qtbase/src/plugins/sqldrivers/config.tests/tds && MAKEFLAGS= make
+> g++ -c -pipe -O2 -w -fPIC  -I. -I/home/kofr/dev/tools/5.12.0/gcc_64/mkspecs/linux-g++ -o main.o main.cpp
+> main.cpp:2:10: fatal error: sybfront.h: No such file or directory
+>  #include <sybfront.h>
+>           ^~~~~~~~~~~~
+> compilation terminated.
+> Makefile:478: recipe for target 'main.o' failed
+> make: *** [main.o] Error 1
+ => source failed verification.
+test config.sqldrivers.libraries.tds FAILED
